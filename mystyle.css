@@ -427,6 +427,167 @@
     margin-top: 20px;
   }
 
+  .tour-itinerary {
+    margin-top: 50px;
+  }
+
+  .itinerary-heading {
+    margin-bottom: 25px;
+  }
+
+  .itinerary-kicker,
+  .day-label {
+    color: var(--primary-color);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .itinerary-heading h3 {
+    margin: 5px 0;
+    color: var(--dark-color);
+    font-size: 1.8rem;
+  }
+
+  .itinerary-heading p {
+    margin: 0;
+    color: #666;
+  }
+
+  .itinerary-day {
+    margin-bottom: 25px;
+    padding: 25px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  }
+
+  .itinerary-day-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e8eef5;
+  }
+
+  .day-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+
+  .itinerary-day-header h4 {
+    margin: 3px 0 0;
+    color: var(--dark-color);
+    font-size: 1.15rem;
+  }
+
+  .itinerary-timeline {
+    position: relative;
+    margin-top: 20px;
+    padding-left: 92px;
+  }
+
+  .itinerary-timeline::before {
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    left: 67px;
+    width: 2px;
+    background: #d7e8f8;
+    content: "";
+  }
+
+  .itinerary-stop {
+    position: relative;
+    min-height: 48px;
+    margin-bottom: 18px;
+  }
+
+  .itinerary-stop:last-child {
+    margin-bottom: 0;
+  }
+
+  .itinerary-stop::before {
+    position: absolute;
+    top: 6px;
+    left: -30px;
+    width: 10px;
+    height: 10px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background: var(--secondary-color);
+    box-shadow: 0 0 0 2px var(--secondary-color);
+    content: "";
+  }
+
+  .itinerary-stop time {
+    position: absolute;
+    top: 0;
+    right: calc(100% + 28px);
+    width: 72px;
+    color: var(--primary-color);
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-align: right;
+  }
+
+  .itinerary-stop p {
+    margin: 0;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  .tour-cost-card {
+    margin-top: 30px;
+    padding: 25px;
+    border-left: 5px solid var(--accent-color);
+    border-radius: 10px;
+    background: #fff8f5;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  }
+
+  .tour-cost-card h3 {
+    margin-bottom: 10px;
+    color: var(--dark-color);
+  }
+
+  .tour-cost-card p {
+    margin: 0 0 20px;
+  }
+
+  .tour-cost-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #f1d8ce;
+  }
+
+  .tour-cost-total strong {
+    color: var(--primary-color);
+    font-size: 1.35rem;
+  }
+
+  .tour-cost-per-person {
+    margin-top: 8px;
+    color: #666;
+    font-size: 0.9rem;
+  }
+
+  .tour-cost-per-person strong {
+    color: var(--accent-color);
+  }
+
   .tour-detail-reviews {
     margin-top: 60px;
   }
@@ -1499,6 +1660,40 @@
    
    .header-cta {
      margin-top: 15px;
+   }
+
+   .itinerary-day {
+     padding: 20px;
+   }
+
+   .itinerary-timeline {
+     padding-left: 28px;
+   }
+
+   .itinerary-timeline::before {
+     left: 5px;
+   }
+
+   .itinerary-stop {
+     padding-top: 24px;
+   }
+
+   .itinerary-stop::before {
+     top: 30px;
+     left: -28px;
+   }
+
+   .itinerary-stop time {
+     position: static;
+     display: block;
+     width: auto;
+     margin-bottom: 4px;
+     text-align: left;
+   }
+
+   .tour-cost-total {
+     align-items: flex-start;
+     flex-direction: column;
    }
 
  }

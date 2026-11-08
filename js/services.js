@@ -1,6 +1,10 @@
 document.addEventListener('DOMContentLoaded', function(){
-   
-   document.querySelector('.add-to-cart-btn').addEventListener('click', function(){
+   const addToCartButton = document.querySelector('.add-to-cart-btn');
+   if (!addToCartButton) {
+      return;
+   }
+
+   addToCartButton.addEventListener('click', function(){
 
       const tourData = document.getElementById('tour-data');
       const tourId = tourData?.dataset.id;

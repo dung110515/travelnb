@@ -9,14 +9,18 @@ document.addEventListener('DOMContentLoaded', function() {
          <a href="../index.html" class="btn btn-outline" onclick="logout()">Đăng Xuất</a>
          <a href="../cart.html" class="btn btn-primary"> Giỏ Hàng</a>             
      `;
-     tourButton.innerHTML = ` <button class="btn btn-outline add-to-cart-btn">Thêm vào giỏ hàng</button>`;                                    
+     if (tourButton) {
+       tourButton.innerHTML = ` <button class="btn btn-outline add-to-cart-btn">Thêm vào giỏ hàng</button>`;
+     }
    } else {
      // Hiển thị nút đăng nhập
      authSection.innerHTML = `
            <a href="../login.html" class="btn btn-outline">Đăng Nhập</a>
-           <a href="#" class="btn btn-primary" onclick="alert('Vui lòng đăng nhập để xem giỏ hàng')"; return false;> Giỏ Hàng </a>
+           <a href="#" class="btn btn-primary" onclick="alert('Vui lòng đăng nhập để xem giỏ hàng'); return false;"> Giỏ Hàng </a>
          `; 
-      tourButton.innerHTML = `<button class="btn btn-outline" onclick="alert('Vui lòng đăng nhập để thêm vào giỏ hàng')";>Thêm vào giỏ hàng</button>`;
+      if (tourButton) {
+        tourButton.innerHTML = `<button class="btn btn-outline" onclick="alert('Vui lòng đăng nhập để thêm vào giỏ hàng')">Thêm vào giỏ hàng</button>`;
+      }
    }        
 });
 
