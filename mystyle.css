@@ -493,14 +493,14 @@
   .itinerary-timeline {
     position: relative;
     margin-top: 20px;
-    padding-left: 92px;
+    padding-left: 112px;
   }
 
   .itinerary-timeline::before {
     position: absolute;
     top: 8px;
     bottom: 8px;
-    left: 67px;
+    left: 82px;
     width: 2px;
     background: #d7e8f8;
     content: "";
@@ -519,7 +519,7 @@
   .itinerary-stop::before {
     position: absolute;
     top: 6px;
-    left: -30px;
+    left: -35px;
     width: 10px;
     height: 10px;
     border: 3px solid #fff;
@@ -532,11 +532,12 @@
   .itinerary-stop time {
     position: absolute;
     top: 0;
-    right: calc(100% + 28px);
-    width: 72px;
+    right: calc(100% + 40px);
+    width: 90px;
     color: var(--primary-color);
     font-size: 0.85rem;
     font-weight: 700;
+    white-space: nowrap;
     text-align: right;
   }
 
@@ -1689,6 +1690,7 @@
      width: auto;
      margin-bottom: 4px;
      text-align: left;
+     white-space: normal;
    }
 
    .tour-cost-total {
